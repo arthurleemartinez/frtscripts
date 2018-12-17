@@ -1,1 +1,65 @@
+def code_monkey():
+    ppp = ""
+    listo = []
+    geb1 = "gnl("
+    geb2 = ")"
+    for i in range(4, 25):
+        a = "a"
+        ee = int(i+1)
+        orb = int(ord(a)) + ee
+        b = str(chr(orb))
+        cc  = a+b
+        c = cc
+        d = str(i)
+        e = c
+        b3 = " = \"\""
+        b4 = " = "
 
+        ppe = "# ad number %d" % ee
+        ppt = print(ppe)
+        ppr = "# set #%d of up to 500 ad response values" % ee
+        ppo = print(ppr)
+        global tt1, tt2, tt3, tt4
+        tt1 = ""
+        tt2 = ""
+        tt3 = ""
+        tt4 =""
+        for j in range(0, 5):
+            cdd = e + str(j)
+            if j == 1:
+                ce = print(e + str(j) + "_x" + b3)
+                ppp = ce
+            elif j == 4:
+                ce1 = print(e + str(j) + b3)
+                tt4 =  e + str(j)
+                listo.append(cdd)
+                ppp = ppt, ce1
+            elif j == 2:
+                listo.append(cdd)
+                global ed
+                ed = (e + str(j) + b4 + geb1 + e + str(1) + "_x" + geb2)
+                ppp = print(ed)
+                tt2 = e + str(j)
+            elif j == 3:
+                listo.append(cdd)
+                ppp = print(e + str(j) + b3)
+                tt3 = e + str(j)
+            elif j == 5:
+                listo.append(cdd)
+                ppp = print(e + str(j) + b3)
+                tt3 = e + str(j)
+            elif j == 0:
+                listo.append(cdd)
+                ppp = print(e + str(j) + b3)
+                tt1 = e + str(j)
+            else:
+                listo.append(cdd)
+                ppp = print(e + str(j)+b3)
+
+        pr = "package_response({t1}, {t2}, int({t3}), {t4})".format(t1=tt1, t2=tt2, t3=tt3, t4=tt4)
+        ppc = a+str(i) + b4 + pr
+        ppd = print(ppc)
+    return ppp,  ppd
+
+
+code_monkey()
