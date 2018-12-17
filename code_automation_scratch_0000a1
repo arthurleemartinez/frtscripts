@@ -1,4 +1,4 @@
-def code_monkey():
+def code_dog():
     ppp = ""
     listo = []
     geb1 = "gnl("
@@ -62,4 +62,4 @@ def code_monkey():
     return ppp,  ppd
 
 
-code_monkey()
+code_dog()
